@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+    <title>Login</title>
+  <head>
+      <link rel="icon" href="Favlogo.png" type="image/png">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+    body{
+      background-image: url('https://w3wallpapers.net/wp-content/uploads/2020/03/Cool-Smartphone-wallpaper.jpg');
+    }
+      .Login{
+        color: white;
+        text-align: center;
+        margin-top: 500px;
+        font-size: 500%;
+        font-family: 'Dancing Script', cursive;
+        /*For CodeDevs*/
+      }
+      #Redict{
+        color: white;
+        cursor: pointer;
+        position: relative;
+        left: 46%;
+        background: transparent;
+        border: 2px solid orange;
+        margin-top: 10px;/*For Redict*/
+      }
+      #Redict1{
+        color: white;
+        text-align: center;
+        position: relative;
+        left: 37%;
+        margin-top: 20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        background: transparent;
+        border: transparent;
+        border-bottom: 2px solid orange;/*For Username*/
+      }
+      #Redict2{
+        color: white;
+        text-align: center;
+        position: relative;
+        left: 37%;
+        margin-top: 20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        background: transparent;
+        border: transparent;
+        border-bottom: 2px solid orange;/*For Password*/
+      }
+      .Redict3{
+        color: white;
+        cursor: pointer;
+        position: relative;
+        left: 46%;
+        background: transparent;
+        border: 2px solid orange;
+        margin-top: 10px;/*For Submit*/
+      }
+      body{
+        background-size: cover;
+      }
+      #inp{
+        color: white;
+        text-align: center;
+        padding-left: 10px;
+      }
+      .create{
+        text-decoration: underline;
+        color: white;
+        position: relative;
+        left: 42%;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body id="Bdy">
+   <script>
+   function Cheak(){
+    let con=prompt("Are You The Owner Of This Site ?(yes/no)");
+  if(con=="y" || con=="Yes" || con=="Y"|| con=="yes" || con=="YES"){
+    console.log("Hi Sir")
+  }
+  else{
+    let res=document.getElementById("Bdy").innerHTML = '<p id=\"inp\">Only Owner Can Accsses This Site</p>';
+   }
+   }
+   function redictb(){
+    var K=document.getElementById('Redict1').value;
+    var P=document.getElementById('Redict2').value;
+   if(K=='Kharaj'){
+       if(P=='kharaj62688'){
+       console.log('Hi '+(K)+(' Welcome Back!'));
+       var i=document.getElementById('Rec').innerHTML = '<form action=\"Webs.html\"><input type=\'submit\' id=\'Redict\' value=\"Login\"></form>';
+       var d=document.getElementById('inp').innerHTML = '\n';
+       Cheak();
+       }
+       else{
+         var d=document.getElementById('inp').innerHTML = 'Your Username or Password is incorrect!';
+   }
+   }
+   else{
+     var d=document.getElementById('inp').innerHTML = 'Your Username or Password is incorrect!';
+   }
+   }
+   </script>
+   <span class="Login"><h2>CodeDevs</h2></span>
+   <input type="text" name="Username" id="Redict1" placeholder="Username" />
+   <br>
+   <input type="password" name="password" id="Redict2" placeholder="&#128273; Password" />
+   <div id="Rec">
+   <button class="Redict3" onclick="redictb()">Login</button>
+   </div>
+   <br>
+   <!--<a class="create" href="create.html">Don't have an id?</a>-->
+   <br>
+   <div id="inp">
+   </div>
+  </body>
+</html>
