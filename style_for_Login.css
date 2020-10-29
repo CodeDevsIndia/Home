@@ -1,0 +1,200 @@
+body {
+    overflow: hidden;
+    background: black;
+}
+
+#not_support {
+    display: none;
+}
+
+#username {
+    text-align: center;
+    position: relative;
+    left: 2vw;
+    margin-bottom: 15px;
+}
+
+#password {
+    text-align: center;
+    position: relative;
+    left: 2vw;
+    margin-bottom: 20px;
+}
+
+#submit {
+    text-align: center;
+    position: relative;
+    left: 2vw;
+}
+
+#pass {
+    background: transparent;
+    text-align: center;
+    border: transparent;
+    border: 2px solid rgb(248, 160, 46);
+    border-radius: 10px;
+    color: white;
+}
+
+#user {
+    background: transparent;
+    text-align: center;
+    border: transparent;
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 10px;
+    color: white;
+}
+
+#login {
+    background: transparent;
+    text-align: center;
+    border: 2px solid rgb(238, 130, 197);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+#login:hover {
+    cursor: pointer;
+}
+
+#main {
+    position: relative;
+    top: 50vh;
+}
+
+#main input[type=text] {
+    width: 300px;
+    height: 25px;
+}
+
+#pass {
+    width: 300px;
+    height: 25px;
+}
+#pass_not{
+    display: none;
+    text-align: center;
+    position: relative;
+    left: 25px;
+    font-size: 80%;
+}
+@media only screen and (max-width:1000px) and (min-width:317px) {
+    #pass_not{
+        display: none;
+        text-align: center;
+        position: relative;
+        left: 15px;
+        font-size: 80%;
+    }   
+}
+@media only screen and (max-width:316px) and (min-width:220px) {
+    #main input[type=text] {
+        width: 200px;
+        height: 25px;
+    }
+    #pass {
+        width: 200px;
+        height: 25px;
+    }
+    #pass_not{
+        text-align: center;
+        font-size: 80%;
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width:219px) and (min-width:169px) {
+    #main input[type=text] {
+        width: 150px;
+        height: 25px;
+    }
+    #pass {
+        width: 150px;
+        height: 25px;
+    }
+    #pass_not{
+        text-align: center;
+        font-size: 80%;
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width:169px) and (min-width:150px) {
+    #main input[type=text] {
+        width: 125px;
+        height: 25px;
+    }
+    #pass {
+        width: 125px;
+        height: 25px;
+    }
+    #pass_not{
+        text-align: center;
+        font-size: 80%;
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width:149px) and (min-width:125px) {
+    #main input[type=text] {
+        width: 100px;
+        height: 25px;
+    }
+    #pass {
+        width: 100px;
+        height: 25px;
+    }
+    #pass_not{
+        text-align: center;
+        font-size: 80%;
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width:124px) and (min-width:120px) {
+    #main input[type=text] {
+        width: 75px;
+        height: 25px;
+    }
+    #pass {
+        width: 75px;
+        height: 25px;
+    }
+    #pass_not{
+        text-align: center;
+        font-size: 80%;
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width:119px) and (min-width:0px) {
+    #main input[type=text] {
+        display: none;
+    }
+    #pass {
+        display: none;
+    }
+    #login {
+        display: none;
+    }
+    #not_support {
+        display: block;
+        width: fit-content;
+        border-radius: 5px;
+    }
+    #not_support h2 {
+        color: white;
+        font-size: medium;
+        border: 2px solid red;
+        font-family: cursive;
+        text-align: center;
+    }
+}
